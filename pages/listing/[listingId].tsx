@@ -207,28 +207,28 @@ function ListingPage() {
         </div>
 
         <section className="flex-1 space-y-5 pb-20 lg:pb-0">
+        <main className="text-white"></main>  
           <div>
-            <h1 className="text-xl font-bold">{listing.asset.name}</h1>
-            <p className="text-gray-600">{listing.asset.description}</p>
+            <h1 className="text-gray-100 text-xl font-bold">{listing.asset.name}</h1>
+            <p className="text-gray-100">{listing.asset.description}</p>
             <p className="flex items-center text-xs sm:text-base">
               <UserCircleIcon className="h-5" />
-              <span className="font-bold pr-1">Seller: </span>
-              {listing.sellerAddress}
+              <span className="text-gray-100 font-bold pr-1">Seller: </span>
+              <p className="sellerAddress">{listing.sellerAddress}</p>
             </p>
           </div>
 
           <div className="grid grid-cols-2 items-center py-2">
-            <p className="font-bold">Listing Type:</p>
-            <p>
-              {listing.type === ListingType.Direct
-                ? "Direct Listing"
-                : "Auction Listing"}
+            <p className="text-white font-bold">Listing Type:</p>
+            <p style={{color: "white"}}>
+                {listing.type === ListingType.Direct
+                  ? "Direct Listing"
+                  : "Auction Listing"}
             </p>
-
-            <p className="font-bold">Buy it Now Price:</p>
-            <p className="text-4xl font-bold">
-              {listing.buyoutCurrencyValuePerToken.displayValue}{" "}
-              {listing.buyoutCurrencyValuePerToken.symbol}
+            <p className="text-white font-bold">Buy it Now Price:</p>
+            <p className="text-white text-4xl font-bold"></p>
+            <p className="text-white">{listing.buyoutCurrencyValuePerToken.displayValue}{" "}
+            <p className="text-white">{listing.buyoutCurrencyValuePerToken.symbol}</p>
             </p>
 
             <button
@@ -242,9 +242,9 @@ function ListingPage() {
           {/* TODO: If DIRECT, show offers here... */}
           {listing.type === ListingType.Direct && offers && (
             <div className="grid grid-cols-2 gap-y-2">
-              <p className="font-bold">Offers: </p>
+              <p className="text-white font-bold">Offers: </p>
               <p className="font-bold">
-                {offers.length > 0 ? offers.length : 0}
+              <p className="text-white">{offers.length > 0 ? offers.length : 0}</p>
               </p>
 
               {offers.map((offer) => (
@@ -309,9 +309,11 @@ function ListingPage() {
             <hr className="col-span-2" />
 
             <p className="col-span-2 font-bold">
+            <p style={{color: "white"}}>
               {listing.type === ListingType.Direct
                 ? "Make an Offer"
                 : "Bid on this Auction"}
+                </p>
             </p>
 
             {/* TODO: Remaining time on auction goes here... */}
@@ -345,7 +347,7 @@ function ListingPage() {
         </section>
       </main>
     </div>
-  );
+    );
 }
 
 export default ListingPage;

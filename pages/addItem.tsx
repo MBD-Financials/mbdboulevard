@@ -55,7 +55,7 @@ function addItem({}: Props) {
     <div>
       <Header />
 
-      <main className="max-w-6xl mx-auto p-10 border">
+      <main className="text-white max-w-6xl mx-auto p-10 border">
         <h1 className="text-4xl font-bold">Add an Item to the Marketplace</h1>
         <h2 className="text-xl font-semibold pt-5">Item Details</h2>
         <p className="pb-5">
@@ -76,7 +76,7 @@ function addItem({}: Props) {
           >
             <label className="font-light">Name of Item</label>
             <input
-              className="formField"
+              className="text-black formField"
               placeholder="Name of item..."
               type="text"
               name="name"
@@ -85,7 +85,7 @@ function addItem({}: Props) {
 
             <label className="font-light">Description</label>
             <input
-              className="formField"
+              className="text-black formField"
               placeholder="Enter Description..."
               type="text"
               name="description"

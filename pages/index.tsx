@@ -26,7 +26,7 @@ const Home = () => {
 
       <main className="max-w-6xl mx-auto py-2 px-6">
         {loadingListings ? (
-          <p className="text-center animate-pulse text-blue-500 ">
+          <p className="text-center animate-pulse text-yellow-500 ">
             Loading listings...
           </p>
         ) : (
@@ -58,7 +58,7 @@ const Home = () => {
                   </p>
 
                   <div
-                    className={`flex items-center space-x-1 justify-end text-xs border w-fit ml-auto p-2 rounded-lg text-white ${
+                    className={`flex items-center space-x-1 justify-end text-xs border w-fit ml-auto p-2 rounded-lg${
                       listing.type === ListingType.Direct
                         ? "bg-blue-500"
                         : "bg-red-500"

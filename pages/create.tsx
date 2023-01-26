@@ -127,7 +127,7 @@ function Create({}: Props) {
     <div>
       <Header />
 
-      <main className="max-w-6xl mx-auto p-10 pt-2">
+      <main className="text-white max-w-6xl mx-auto p-10 pt-2">
         <h1 className="text-4xl font-bold">List an Item</h1>
         <h2 className="text-xl font-semibold pt-5">
           Select an Item you would like to Sell
@@ -142,7 +142,7 @@ function Create({}: Props) {
             <div
               key={nft.metadata.id}
               onClick={() => setSelectedNft(nft)}
-              className={`flex flex-col space-y-2 card min-w-fit border-2 bg-gray-100 ${
+              className={`flex flex-col space-y-2 card min-w-fit border-2 bg-purple-500 ${
                 nft.metadata.id === selectedNft?.metadata.id
                   ? "border-black"
                   : "border-transparent"
@@ -185,7 +185,7 @@ function Create({}: Props) {
                   type="text"
                   name="price"
                   placeholder="0.05"
-                  className="bg-gray-100 p-5"
+                  className="bg-gray-100 p-5 text-black"
                 />
               </div>
 
