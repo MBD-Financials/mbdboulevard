@@ -34,7 +34,7 @@ function Header({}: Props) {
         </div>
 
         <div className="flex items-center space-x-4 text-sm">
-        <p className="headerLink text-white">Subscriptions </p>
+        <p className="headerLink text-white">Pricing </p>
         <p className="headerLink text-white">AI Studio </p>
         <p className="headerLink text-white">MBD Gemz </p>
       
@@ -83,7 +83,7 @@ function Header({}: Props) {
 
         <Link href="/create">
           <button className="bg-purple-500 border-2 border-black px-5 md:px-10 py-2 text-white hover:bg-yellow-400 hover:text-white cursor-pointer">
-            List Item
+            My Inventory
           </button>
         </Link>
       </section>
