@@ -41,7 +41,7 @@ function Header({}: Props) {
             Send Crypto
           <ChevronDownIcon className="h-4" />
           </a>
-        <a href="https://hey-may-ai.netlify.app/" className="headerLink text-white flex items-center hover:link">
+        <a href="https://aistudio.netlify.app/" className="headerLink text-white flex items-center hover:link">
             AI Studio
           <ChevronDownIcon className="h-4" />
         </a>
