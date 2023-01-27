@@ -37,10 +37,15 @@ function Header({}: Props) {
         <p className="headerLink text-white">Pricing </p>
         <p className="headerLink text-white">MBD Gemz </p>
       
+        <a href="https://mbdsend.netlify.app/" className="headerLink text-white flex items-center hover:link">
+            Send Crypto
+          <ChevronDownIcon className="h-4" />
+          </a>
         <a href="https://hey-may-ai.netlify.app/" className="headerLink text-white flex items-center hover:link">
             AI Studio
           <ChevronDownIcon className="h-4" />
         </a>
+        
           <Link href="/addItem" className="text-white flex items-center hover:link">
             Add to inventory
             <ChevronDownIcon className="h-4" />
