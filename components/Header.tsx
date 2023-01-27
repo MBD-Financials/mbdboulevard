@@ -35,7 +35,6 @@ function Header({}: Props) {
 
         <div className="flex items-center space-x-4 text-sm">
         <p className="headerLink text-white">Pricing </p>
-        <p className="headerLink text-white">AI Studio </p>
         <p className="headerLink text-white">MBD Gemz </p>
       
         <a href="https://hey-may-ai.netlify.app/" className="headerLink text-white flex items-center hover:link">
