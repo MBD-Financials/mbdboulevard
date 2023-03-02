@@ -30,7 +30,7 @@ function Header({}: Props) {
               Connect your wallet
             </button>
           )}
-        <p className="headerLink text-white">Help & Contact</p>
+          <p className="headerLink text-white">Help & Contact</p>
         </div>
 
         <div className="flex items-center space-x-4 text-sm">
